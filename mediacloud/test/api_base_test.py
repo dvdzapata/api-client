@@ -22,13 +22,13 @@ class BaseApiTest(TestCase):
 
     @staticmethod
     def test_token():
-        mc_api_key = os.getenv("MC_API_TOKEN")
+        mc_api_key = os.getenv("fd09b4ecfebd0e8fc72aac219dbcaf64cf200d65")
         _ = mediacloud.api.DirectoryApi(mc_api_key)
         assert True
 
     @staticmethod
     def test_user_profile():
-        mc_api_key = os.getenv("MC_API_TOKEN")
+        mc_api_key = os.getenv("fd09b4ecfebd0e8fc72aac219dbcaf64cf200d65")
         client = mediacloud.api.DirectoryApi(mc_api_key)
         _ = client.user_profile()
         print(_)

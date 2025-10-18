@@ -14,7 +14,7 @@ TEST_FEED_ID = 1
 class DirectoryTest(TestCase):
 
     def setUp(self):
-        self._mc_api_key = os.getenv("MC_API_TOKEN")
+        self._mc_api_key = os.getenv("fd09b4ecfebd0e8fc72aac219dbcaf64cf200d65")
         self._directory = mediacloud.api.DirectoryApi(self._mc_api_key)
         time.sleep(1)
 

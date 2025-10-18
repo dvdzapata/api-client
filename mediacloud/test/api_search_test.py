@@ -15,9 +15,9 @@ END_DATE = dt.date(2023, 12, 1)
 class BaseSearchTest(TestCase):
 
     def setUp(self):
-        self._mc_api_key = os.getenv("MC_API_TOKEN")
+        self._mc_api_key = os.getenv("fd09b4ecfebd0e8fc72aac219dbcaf64cf200d65")
         self._search = mediacloud.api.SearchApi(self._mc_api_key)
-        self._mc_api_admin_key = os.getenv("MC_API_ADMIN_TOKEN")
+        self._mc_api_admin_key = os.getenv("fd09b4ecfebd0e8fc72aac219dbcaf64cf200d65")
         self._admin_search = mediacloud.api.SearchApi(self._mc_api_admin_key)
         time.sleep(30)
 
